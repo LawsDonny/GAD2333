@@ -1,0 +1,18 @@
+using UnityEngine;
+using System.Collections;
+
+public class Count : MonoBehaviour {
+
+	public string sentence;
+	// Use this for initialization
+	void Start () {
+		string source = (sentence);
+		int count = source.Length - source.Replace ("s", "").Length;
+		print ("The letter S appears " +(count)+ " times in this sentence");
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}
