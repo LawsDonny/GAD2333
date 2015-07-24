@@ -1,0 +1,17 @@
+using UnityEngine;
+using System.Collections;
+
+public class HW3 : MonoBehaviour 
+{
+	public int Length = 1;
+	public int Width = 1;
+	// Use this for initialization
+	void Start () {
+		print ("Perimeter = " +(Length + Width)+ "\nArea = " + (Length * Width) );
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}
