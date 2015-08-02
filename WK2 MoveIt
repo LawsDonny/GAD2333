@@ -10,7 +10,7 @@ public class MoveIt : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () 
-	{
+	{  
 	
 		if (Input.GetKey (KeyCode.RightArrow)) {
 			Vector3 position = this.transform.position;
