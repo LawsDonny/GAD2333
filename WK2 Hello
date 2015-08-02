@@ -11,8 +11,8 @@ public class Hello : MonoBehaviour {
 		}
 	public void SayHello (string name)
 	{
-		print ("Hi " + myName);
-	}
+		print ("Hi " + myName); //You need to use 'name' here or you are bypassing the whole point of passing
+	}				//the data from myName to name.
 
 	public void SayGoodbye ()
 	{
