@@ -11,7 +11,7 @@ public class Hello : MonoBehaviour {
 		}
 	public void SayHello (string name)
 	{
-		print ("Hi " + myName);
+		print ("Hi " + name);
 	}
 
 	public void SayGoodbye ()
