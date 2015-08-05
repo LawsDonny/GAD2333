@@ -1,0 +1,33 @@
+using UnityEngine;
+using System.Collections;
+
+public class Light_L_LV1 : MonoBehaviour {
+
+	public Light_C other2;
+	public Light_R other3;
+	
+	public void ChangeColor()
+	{
+		gameObject.GetComponent<Renderer> ().material.color = new Color (1, 1, 0, 0);
+		other2.ChangeColor ();
+		other3.ChangeColor ();
+		Application.LoadLevel ("Level2");
+		
+	}
+	
+	public void KillColor()
+	{
+		gameObject.GetComponent<Renderer> ().material.color = new Color (0.5f, 0.5f, 0.5f);
+		other2.KillColor ();
+		other3.KillColor ();
+	}
+	
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}
