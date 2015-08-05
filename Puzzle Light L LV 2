@@ -1,0 +1,36 @@
+using System.Collections;
+
+public class Light_L_LV2 : MonoBehaviour {
+
+	// Use this for initialization
+	public Light_C other2;
+	public Light_R other3;
+	public Light_FR other4;
+	
+	public void ChangeColor()
+	{
+		gameObject.GetComponent<Renderer> ().material.color = new Color (1, 1, 0, 0);
+		other2.ChangeColor ();
+		other3.ChangeColor ();
+		other4.ChangeColor ();
+		print ("You Win!");
+		
+	}
+	
+	public void KillColor()
+	{
+		gameObject.GetComponent<Renderer> ().material.color = new Color (0.5f, 0.5f, 0.5f);
+		other2.KillColor ();
+		other3.KillColor ();
+		other4.KillColor ();
+	}
+	
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}
