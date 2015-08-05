@@ -1,0 +1,27 @@
+using UnityEngine;
+using System.Collections;
+
+public class SlideMark_FR : MonoBehaviour {
+
+	void Start () {
+		
+	}
+	
+	
+	void Update () 
+	{
+		if (Input.GetKeyDown (KeyCode.UpArrow) && Input.GetKey(KeyCode.Alpha4)) 
+		{
+			Vector3 position = this.transform.position;
+			position.z++;
+			this.transform.position = position;
+		}
+		
+		if (Input.GetKeyDown(KeyCode.DownArrow) && Input.GetKey(KeyCode.Alpha4)) 
+		{
+			Vector3 position = this.transform.position;
+			position.z--;
+			this.transform.position = position;
+		}
+	}
+}
